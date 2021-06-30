@@ -9,6 +9,11 @@ function evenlySpaced(first, second, last) {
     let middle = array[1];
     let largest = array[2];
   
-    let avg = (largest + smallest) / 2;
-    return avg == middle;
-  }
+  //   let avg = (largest + smallest) / 2;
+  //   return avg == middle;
+  // }
+
+  return ((middle - smallest) !== (largest - middle)) ? false : true
+}
+
+console.log(evenlySpaced(4, 6, 2));
